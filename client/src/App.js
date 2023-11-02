@@ -10,6 +10,7 @@ import Login from "./pages/common/Login";
 import Register from "./pages/common/Register";
 import ProtectedRoute from "./components/ProtectedRoute";
 import Home from "./pages/common/Home";
+import Explore from "./pages/common/Explore";
 import Exams from "./pages/admin/Exams";
 import AddEditExam from "./pages/admin/Exams/AddEditExam";
 import Loader from "./components/Loader";
@@ -35,6 +36,14 @@ function App() {
             element={
               <ProtectedRoute>
                 <Home />
+              </ProtectedRoute>
+            }
+          />
+          <Route
+            path="/explore"
+            element={
+              <ProtectedRoute>
+                <Explore />
               </ProtectedRoute>
             }
           />

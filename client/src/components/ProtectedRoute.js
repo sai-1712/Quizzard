@@ -21,6 +21,12 @@ function ProtectedRoute({ children }) {
       onClick: () => navigate("/"),
     },
     {
+      title: "Explore",
+      paths: ["/explore", "/user/write-exam"],
+      icon: <i className="ri-global-line"></i>,
+      onClick: () => navigate("/explore"),
+    },
+    {
       title: "Reports",
       paths: ["/user/reports"],
       icon: <i className="ri-bar-chart-line"></i>,
@@ -49,6 +55,12 @@ function ProtectedRoute({ children }) {
       paths: ["/", "/user/write-exam"],
       icon: <i className="ri-home-line"></i>,
       onClick: () => navigate("/"),
+    },
+    {
+      title: "Explore",
+      paths: ["/explore", "/user/write-exam"],
+      icon: <i className="ri-global-line"></i>,
+      onClick: () => navigate("/explore"),
     },
     {
       title: "Exams",
